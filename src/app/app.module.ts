@@ -5,11 +5,12 @@ import localePt from '@angular/common/locales/pt';
 
 import { AppComponent } from './app.component';
 import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.component';
+import { CamelCasePipe } from './camel-case.pipe';
 
 registerLocaleData(localePt, 'pt');
 
 @NgModule({
-  declarations: [AppComponent, ExemplosPipesComponent],
+  declarations: [AppComponent, ExemplosPipesComponent, CamelCasePipe],
   imports: [BrowserModule],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt' },
